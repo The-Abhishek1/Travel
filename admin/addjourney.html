@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./css/addjourney.css">
+    <title>Admin - Add Journey</title>
+    <style>
+        body {
+            background-image: url('./images/beach-sunset-bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Ensures the image doesn't scroll with the content */
+            font-family: Arial, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        .addjourney{
+           background-color: rgb(249, 232, 211);
+           padding: 20px 40px;
+           display: flex;
+           flex-direction: column;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           gap: 10px;
+        }
+        .addjourney input{
+            padding: 5px 30px;
+           outline: none;
+           border: none;
+        }
+        .submit{
+            background-color: green;
+            margin-top: 20px;
+            padding: 20px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>TravelScapes</h1>
+    <form method="post" action="addjourney.php" class="addjourney">
+        <h3>Add Journey </h3>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" placeholder="City">
+
+        <label for="region">Region:</label>
+        <input type="text" id="region" name="region" placeholder="Region">
+
+        <label for="season">Season:</label>
+        <input type="text" id="season" name="season" placeholder="Season">
+
+        <label for="days">Days:</label>
+        <input type="number" id="days" name="days" placeholder="Days">
+
+        <label for="cost">Cost:</label>
+        <input type="number" id="cost" name="cost" placeholder="Cost">
+
+        <input type="submit" value="Add Journey" class="submit">
+    </form>
+</body>
+</html>
